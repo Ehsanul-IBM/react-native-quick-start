@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "license": "ISC",
   "scripts": {
-    "android": "ENVFILE=.env react-native run-android --variant=debug",
-    "android:release": "ENVFILE=.env.release react-native run-android --variant=release",
-    "ios": "ENVFILE=.env react-native run-ios --configuration Debug",
-    "ios:release": "ENVFILE=.env.release react-native run-ios --configuration Release",
+    "android": "react-native run-android ENVFILE=.env --variant=debug",
+    "android:release": "react-native run-android ENVFILE=.env.release --variant=release",
+    "ios": "react-native run-ios ENVFILE=.env --configuration Debug",
+    "ios:release": "react-native run-ios ENVFILE=.env.release --configuration Release",
     "ios:small": "react-native run-ios --simulator 'iPhone SE (2nd generation)'",
     "ios:xsmall": "react-native run-ios --simulator 'iPhone SE (1st generation)'",
     "ios:ipad": "react-native run-ios --simulator 'iPad (7th generation)'",
@@ -38,7 +38,6 @@
     "react-native-reanimated": "^1.13.0",
     "react-native-safe-area-context": "^3.1.4",
     "react-native-screens": "^2.10.1",
-    "react-native-size-matters": "^0.3.0",
     "react-native-url-polyfill": "^1.2.0",
     "styled-components": "^5.1.1",
     "subscriptions-transport-ws": "^0.9.18"

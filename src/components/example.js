@@ -1,28 +1,29 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { s } from 'react-native-size-matters';
+import { s, vs } from '@utils/scale';
 
 const Wrapper = styled.View`
-  height: auto;
-  width: ${s(140)}px;
+  height: ${vs(406)}px;
+  width: ${s(375)}px;
   background-color: green;
   opacity: 1;
-  border: ${s(4)}px;
-  padding: ${s(10)}px;
   display: flex;
   justify-content: center;
   align-self: center;
 `;
 
 const Label = styled.Text`
-  font-size: ${s(20)}px;
+  font-size: ${s(24)}px;
+  font-weight: bold;
   text-align: center;
 `;
 
-const Render = () => (
-  <Wrapper>
-    <Label>Tap To Navigate</Label>
-  </Wrapper>
-);
+const Render = () => {
+  return (
+    <Wrapper>
+      <Label>Tap To Navigate</Label>
+    </Wrapper>
+  );
+};
 
 export default Render;
