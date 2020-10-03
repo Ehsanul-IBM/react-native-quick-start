@@ -1,4 +1,4 @@
-# React Native Boilerplate
+# React Native Quick Start
 
 A basic React Native boilerplate bundled with a few packages and utilities to improve developer experience.
 
