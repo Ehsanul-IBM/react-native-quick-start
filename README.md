@@ -11,8 +11,7 @@ This boilerplate has been built using:
 - React Navigation (with a custom helper utility)
 - React Native Config for env vars, with multi environment support (see scripts in package.json)
 - React Native Bootsplash has been used to generate splash screens, see docs on how to set your own
-- Axios, why not
-- Size Matters, a really useful solution to keep content consistently scaled across device sizes, see the example component as a reference (and view it on some different device sizes!)
+- Scaling utility functions for ensuring content scales correctly across different device sizes
 
 SafeArea and StatusBar have already been set to avoid common issues with content overlapping device notches, or status bar content being insvisible/overlapped.
 
