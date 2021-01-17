@@ -10,12 +10,15 @@ const getNavigation = () => navigator;
 
 // Custom navigate handler allowing stack to be reset in props
 const navigate = (screenName, params, resetStack = false) => {
+  const navigation = getNavigation();
+  // Prevent navigation actions if stack does not exist
+  if (!navigation) return null;
   if (resetStack)
-    return getNavigation().reset({
+    return navigation.reset({
       index: 0,
       routes: [{ name: screenName, params }],
     });
-  return getNavigation().navigate(screenName, params);
+  return navigation.navigate(screenName, params);
 };
 
 // Returns a boolean based on if the user can go back further than the current screen
