@@ -10,7 +10,9 @@ const Render = ({ navigation }) => {
   });
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <TouchableHighlight onPress={() => navigation.navigate('Content')}>
+      <TouchableHighlight
+        onPress={() => navigation.navigate('Content')}
+        accessibilityRole={'touchable'}>
         <Example />
       </TouchableHighlight>
       <Text>Built for {env.APP_ENV}</Text>

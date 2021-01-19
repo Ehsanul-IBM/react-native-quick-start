@@ -5,7 +5,9 @@ import { Example } from '@components';
 const Render = ({ navigation }) => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <TouchableHighlight onPress={() => navigation.navigate('Auth')}>
+      <TouchableHighlight
+        onPress={() => navigation.navigate('Auth')}
+        accessibilityRole={'touchable'}>
         <Example />
       </TouchableHighlight>
     </View>
